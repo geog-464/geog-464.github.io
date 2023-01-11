@@ -1,0 +1,198 @@
+<HTML>
+<HEAD>
+<TITLE>Unix Cheat Sheet</TITLE>
+<BASE TARGET="_top">
+</HEAD>
+
+<CENTER>
+<H1>Unix Cheat Sheet</H1>
+</CENTER>
+
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD COLSPAN=3><HR>
+
+<TR><TD COLSPAN=3><FONT SIZE=+1>Help on any Unix command.</FONT><BR>
+<TR>
+<TD WIDTH=50>
+
+<TD WIDTH=260><TT>man {command}</TT><TD>Type <B>man rm</B> to read the manual for the <B>rm</B> command.<BR>
+<TR><TD><TD><TT>whatis {command}</TT><TD>Give short description of command.<BR>
+
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>List a directory</FONT><BR>
+<TR><TD><TD><TT>ls {path}</TT><TD>It's ok to combine attributes, eg <B>ls -laF</B> gets a long listing of all files with types.<BR>
+<TR><TD><TD><TT>ls {path_1} {path_2}</TT><TD>List both {path_1} and {path_2}.<BR>
+
+<TR><TD><TD><TT>ls -l {path}</TT><TD>Long listing, with date, size and permisions.<BR>
+<TR><TD><TD><TT>ls -a {path}</TT><TD>Show all files, including important .dot files that don't otherwise show.<BR>
+<TR><TD><TD><TT>ls -F {path}</TT><TD>Show type of each file. "<B>/</B>" = directory, "<B>*</B>" = executable.<BR>
+<TR><TD><TD><TT>ls -R {path}</TT><TD>Recursive listing, with all subdirs.<BR>
+
+<TR><TD><TD><TT>ls {path} | more</TT><TD>Show listing one screen at a time.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Change to directory</FONT><BR>
+<TR><TD><TD><TT>cd {dirname}</TT><TD>There must be a space between.<BR>
+<TR><TD><TD><TT>cd ~</TT><TD>Go back to home directory, useful if you're lost.<BR>
+
+<TR><TD><TD><TT>cd ..</TT><TD>Go back one directory.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Make a new directory</FONT><BR>
+<TR><TD><TD><TT>mkdir {dirname}</TT><TD><BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Remove a directory</FONT><BR>
+
+<TR><TD><TD><TT>rmdir {dirname}</TT><TD>Only works if {dirname} is empty.<BR>
+<TR><TD><TD><TT>rm -r {dirname}</TT><TD>Remove all files and subdirs. Careful!<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Print working directory</FONT><BR>
+<TR><TD><TD><TT>pwd</TT><TD>Show where you are as full path. Useful if you're lost or exploring.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Copy a file or directory</FONT><BR>
+
+<TR><TD><TD><TT>cp {file1} {file2}</TT><TD><BR>
+<TR><TD><TD><TT>cp -r {dir1} {dir2}</TT><TD>Recursive, copy directory and all subdirs.<BR>
+<TR><TD><TD><TT>cat {newfile} &gt;&gt; {oldfile}</TT><TD>Append newfile to end of oldfile.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Move (or rename) a file</FONT><BR>
+<TR><TD><TD><TT>mv {oldfile} {newfile}</TT><TD>Moving a file and renaming it are the same thing.<BR>
+
+<TR><TD><TD><TT>mv {oldname} {newname}</TT><TD><BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Delete a file</FONT><BR>
+<TR><TD><TD><TT>rm {filespec}</TT><TD><B>?</B> and <B>*</B> wildcards work like DOS should. "?" is any character; "*" is any string of characters.<BR>
+<TR><TD><TD><TT>ls {filespec}<BR>rm {filespec}</TT><TD>Good strategy: first list a group to make sure it's what's you think...<BR>...then delete it all at once.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>View a text file</FONT><BR>
+
+<TR><TD><TD><TT>more {filename}</TT><TD>View file one screen at a time.<BR>
+<TR><TD><TD><TT>less {filename}</TT><TD>Like <B>more</B>, with extra features.<BR>
+<TR><TD><TD><TT>cat {filename}</TT><TD>View file, but it scrolls.<BR>
+<TR><TD><TD><TT>cat {filename} | more</TT><TD>View file one screen at a time.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Edit a text file.</FONT><BR>
+<TR><TD><TD><TT>gedit {filename}</TT><TD>Basic text editor<br>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Create a text file.</FONT><BR>
+<TR><TD><TD><TT>cat &gt; {filename}</TT><TD>Enter your text (multiple lines with <B>enter</B> are ok) and press <B>control-d</B> to save.<BR>
+<TR><TD><TD><TT>gedit {filename}</TT><TD>Create some text and save it.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Compare two files</FONT><BR>
+<TR><TD><TD><TT>diff {file1} {file2}</TT><TD>Show the differences.<BR>
+<TR><TD><TD><TT>sdiff {file1} {file2}</TT><TD>Show files side by side.<BR>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Other text commands</FONT><BR>
+<TR><TD><TD><TT>grep '{pattern}' {file}</TT><TD>Find regular expression in file.<BR>
+
+<TR><TD><TD><TT>spell {file}</TT><TD>Display misspelled words.<BR>
+<TR><TD><TD><TT>wc {file}</TT><TD>Count words in file.<BR>
+<TR><TD><TD><TT>wc -l {file}</TT><TD>Count the number of lines in a file.<br>
+
+<TR><TD COLSPAN=3><HR>
+<TR><TD COLSPAN=3><FONT SIZE=+1>Make an Alias</FONT><BR>
+<TR><TD><TD><TT>alias {name}='{command}'</TT><TD>Put the command in 'single quotes'.  More useful in your <B>.bashrc</B> file.<BR>
+
+<TR><TD COLSPAN=3><HR>
+
+<TR><TD COLSPAN=3><FONT SIZE=+1>Wildcards and Shortcuts</FONT><BR>
+<TR><TD><TD><TT>*</TT><TD>Match any string of characters, eg <B>page*</B> gets page1, page10, and page.txt.<BR>
+<TR><TD><TD><TT>?</TT><TD>Match any single character, eg <B>page?</B> gets page1 and page2, but not page10.<BR>
+<TR><TD><TD><TT>[...]</TT><TD>Match any characters in a range, eg <B>page[1-3]</B> gets page1, page2, and page3.<BR>
+
+<TR><TD><TD><TT>~</TT><TD>Short for your home directory, eg <B>cd ~</B> will take you home, and <B>rm -r ~</B> will destroy it.<BR>
+<TR><TD><TD><TT>.</TT><TD>The current directory.<BR>
+<TR><TD><TD><TT>..</TT><TD>One directory up the tree, eg <B>ls ..</B>.
+
+<TR><TD COLSPAN=3><HR>
+
+<TR><TD COLSPAN=2><FONT SIZE=+1>Pipes and Redirection</FONT><TD>(You <B>pipe</B> a command to another command, and <B>redirect</B> it to a file.)<BR>
+<TR><TD><TD><TT>{command} &gt; {file}</TT><TD>Redirect output to a file, eg <B>ls &gt; list.txt</B> writes directory to file.<BR>
+
+<TR><TD><TD><TT>{command} &gt;&gt; {file}</TT><TD>Append output to an existing file, eg <B>cat update &gt;&gt; archive</B> adds update to end of archive.<BR>
+<TR><TD><TD><TT>{command} &lt; {file}</TT><TD>Get input from a file, eg <B>sort < file.txt</B><BR>
+
+<TR><TD><TD><TT>{command} &lt; {file1} &gt; {file2}</TT><TD>Get input from <TT>file1</TT>, and write to <TT>file2</TT>, eg <B>sort < old.txt > new.txt</B> sorts old.txt and saves as new.txt.
+<TR><TD><TD><TT>{command} | {command}</TT><TD>Pipe one command to another, eg <B>ls | more</B> gets directory and sends it to <B>more</B> to show it one page at a time.<BR>
+
+
+<TR><TD COLSPAN=3><FONT SIZE=+1>System info</FONT><BR>
+<TR><TD><TD><TT>date</TT><TD>Show date and time.<BR>
+<TR><TD><TD><TT>df</TT><TD>Check system disk capacity.<BR>
+<TR><TD><TD><TT>du</TT><TD>Check your disk usage and show bytes in
+    each directory.<BR>
+<TR><TD><TD><TT>du -h</TT><TD>Check your disk usage in a human
+    readable format<br>
+<TR><TD><TD><TT>printenv</TT><TD>Show all environmental variables <BR>
+
+<TR><TD><TD><TT>uptime</TT><TD>Find out system load.<BR>
+<TR><TD><TD><TT>w</TT><TD>Who's online and what are they doing?<BR>
+<TR><TD><TD><TT>top</TT><TD>Real time processor and memory usage<BR>
+</TABLE>
+
+<P><HR>
+<FONT SIZE=+1>Unix Directory Format</FONT><P>
+<BLOCKQUOTE>
+Long listings (<B>ls -l</B>) have this format:<P>
+
+<PRE><TT>
+    <B>-</B> file
+    <B>d</B> directory,                                            <B>*</B> executable
+    ^   symbolic links (?)  file size (bytes)   file name   <B>/</B> directory
+    ^           ^               ^                  ^        ^
+    <B>drwxr-xr-x 11 valerie    16296  Mar  7 23:25 public_html/
+    -rw-r--r--  1 valerie      256  Mar  8 23:42 index.html</B>
+                                            ^
+     ^^^        user permission  (rwx)      date and time last modified
+        ^^^     group permission (rwx)
+           ^^^  world permission (rwx)
+
+</TT></PRE>
+</BLOCKQUOTE>
+
+<P><HR>
+<FONT SIZE=+1>DOS and UNIX commands</FONT><P>
+<BLOCKQUOTE>
+<TABLE BORDER=0 WIDTH=500>
+<TR ALIGN=LEFT><TH>Action<TH>DOS<TH>UNIX<BR>
+
+<TR><TD>change directory<TD>cd<TD>cd<BR>
+<TR><TD>change file protection<TD>attrib<TD>chmod<BR>
+<TR><TD>compare files<TD>comp<TD>diff<BR>
+<TR><TD>copy file<TD>copy<TD>cp<BR>
+<TR><TD>delete file<TD>del<TD>rm<BR>
+
+<TR><TD>delete directory<TD>rd<TD>rmdir<BR>
+<TR><TD>directory list<TD>dir<TD>ls<BR>
+<TR><TD>edit a file<TD>edit<TD>pico<BR>
+<TR><TD>environment<TD>set<TD>printenv<BR>
+<TR><TD>find string in file<TD>find<TD>grep<BR>
+
+<TR><TD>help<TD>help<TD>man<BR>
+<TR><TD>make directory<TD>md<TD>mkdir<BR>
+<TR><TD>move file<TD>move<TD>mv<BR>
+<TR><TD>rename file<TD>ren<TD>mv<BR>
+<TR><TD>show date and time<TD>date, time<TD>date<BR>
+
+<TR><TD>show disk space<TD>chkdsk<TD>df<BR>
+<TR><TD>show file<TD>type<TD>cat<BR>
+<TR><TD>show file by screens<TD>type filename | more<TD>more
+<TR><TD>sort data<TD>sort<TD>sort<BR>
+</TABLE>
+</BLOCKQUOTE>
+
+
+</BODY>
+
+</HTML>
