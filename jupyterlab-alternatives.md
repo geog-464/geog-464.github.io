@@ -2,7 +2,7 @@ Here are two alternative ways to run a Jupyter notebook without installing jupyt
 
 ## To run the lab *online* using *Google Colab*
 
-This option uses proprietary software with terms of use, requires a Google account and available space on Google Drive, and can't be integrated directly with your online Github repo, so it requires manual file management (i.e. downloading your work from Google Drive once completed and uploading it to Github for submission).
+This option uses proprietary software with terms of use, requires a Google account and available space on Google Drive, and can't be integrated directly with your online Github repo, so it requires manual file management (i.e. downloading your work from Google Drive once completed and uploading it to Github for submission). Note that shell commands in Colab are a bit unintuitive. See a lab instructor about executing shell commands here.
 
 - Visit your [Google Drive]([https://colab.research.google.com/](https://drive.google.com)) and make sure you're logged in with your Google account
 - If you would like to create a new Jupyter notebook, hit **New** > **More** > **Google Colaboratory**. Remember that you will need to then download this `ipynb` file and add it to your Github repo manually if you need to submit it later.
