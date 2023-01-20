@@ -1,13 +1,19 @@
-Here are two alternative ways to run a Jupyter notebook without installing jupyterlab locally. The first uses Google Drive and is less directly integrated with Github, the second is less intuitive, but provides more direct interface with Github.
+Here are two alternative ways to run a Jupyter notebook without installing jupyterlab locally. The first uses Google Drive and is less directly integrated with Github (this option is recommended), the second is less intuitive, but provides more direct interface with Github.
 
 ## To run the lab *online* using *Google Colab*
 
-This option uses proprietary software with terms of use, requires a Google account and available space on Google Drive, and can't be integrated directly with your online Github repo, so it requires manual file management (i.e. downloading your work from Google Drive once completed and uploading it to Github for submission). Note that shell commands in Colab are a bit unintuitive. See a lab instructor about executing shell commands here.
+This option uses proprietary software with terms of use, requires a Google account and available space on Google Drive, and can't be integrated directly with your online Github repo, so it requires manual file management (i.e. downloading your work from Google Drive once completed and uploading it to Github for submission).
 
 - Visit your [Google Drive]([https://colab.research.google.com/](https://drive.google.com)) and make sure you're logged in with your Google account
-- If you would like to create a new Jupyter notebook, hit **New** > **More** > **Google Colaboratory**. Remember that you will need to then download this `ipynb` file and add it to your Github repo manually if you need to submit it later.
-  - Or, if you need to work with an existing repo, clone or download (and unzip) your repo, then upload your whole repo folder to Google Drive
-- From inside Google Drive, open your lab notebook (.ipynb) file: it should open automatically in Google Colab
+- If you need to work with an existing repo:
+  - clone (or download and unzip) your repo to your computer, then upload its contents to your Google Drive (ideally inside a folder separate from everything else).
+  - From within Google Drive, open the lab notebook (.ipynb) file you uploaded: it should open automatically as a *Google Colaboratory* file.
+  - When you're finished working on this file, you will want to submit it to your repo: To do this, download it from Google Drive to your computer and upload it to Github either through command line or by visiting Github.com.
+- In general, you can create new `.ipynb` files in Google Drive by clicking on **New** > **More** > **Google Colaboratory**.
+
+### to install Python packages in Google Colab
+
+Colab comes with pre-installed Python libraries. You can check these by entering `!pip list`. As you can see, this is an ordinary shell command (`pip list`) you would execute on command line, but to do this in Google Colab requires you to prepend the command with an exclamation mark (`!`). Therefore, to install a python package such as pandas, you would do `!pip install pandas`, etc.
 
 ### to import data to your Google Colab notebook
 - Once in the lab notebook, click the files tab (folder icon) on the left,
