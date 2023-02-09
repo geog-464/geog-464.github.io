@@ -170,7 +170,7 @@ Basically a catch-all library that can pump out visualizations in matplotlib, Bo
 
 Below: Demonstration of GeoViews + datashader + Bokeh by [Gregor Herda](https://gregorhd.github.io/): *Building footprints are being rasterised by datashader on-the-fly at ever higher resolutions as you zoom in while preserving the ability to interactively access the polygons’ attributes via the hover tool.*
 
-![[geoviews_datashader_bokeh_dresden.gif]]
+![gif](geoviews_datashader_bokeh_dresden.gif)
 
 ## [PyDeck](https://deckgl.readthedocs.io/en/latest/index.html)
 
