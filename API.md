@@ -3,11 +3,12 @@
 - API is an acronym that stands for *Application Programming Interface.*
 - An API is a set of protocols and tools that allow software applications to communicate with each other (often over the web, but not always). An API allows a system to request access to data or services of another system through a set of clearly defined methods.
 
+To break it down:
 - **Application**: Any algorithm / piece of software / program with a distinct function
 - **Programming**: Access is predefined and can be reached programmatically via the...
 - **Interface**: The interface can be thought of as a series of cafeteria counters which we call *endpoints*: points of entry to access the functionality of any given system. These points of entry usually involve transactions which contain parameters that help define the kind of information or service being requested. Such interactions involve a "[contract of service](https://aws.amazon.com/what-is/api/)" between two applications (what you ask for and what you get in return), defined in the API's documentation.
 
-- Simply put, an API is a set of defined entryways into an application / package / service / data stream.
+Simply put, an API is a set of defined entryways into an application / package / service / data stream.
 - An API call can be as simple as a query or function call:
 	- A URL defines the endpoint of a Web API 
 	- whereas a function call and its arguments may define access to a software library
