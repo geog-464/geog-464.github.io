@@ -1,5 +1,10 @@
 # Resources
 
+This page is under construction
+
+## Lecture slides
+
+
 
 ## How-to
 
