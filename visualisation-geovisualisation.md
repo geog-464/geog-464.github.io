@@ -13,7 +13,7 @@ The goal of this overview is to help you situate yourself amid the growing const
 
 There is a wealth of visualization libraries to choose from: the task of figuring out what's worth trying out and sticking to can be [quite overwhelming](https://www.mindomo.com/mindmap/the-python-visualisation-landscape-dark-fd1a5c3770bdf84be045094f15ed3b7a).
 
-!(imgs/20230208021253.png)
+![img](imgs/20230208021253.png)
 
 Visualisation libraries are largely based on two core technologies: Matplotlib and Javascript. When thinking about geovisualisation in particular:
 - **Matplotlib** can be understood as the **core library for static maps** facilitated by extensions such as Geopandas, Cartopy, Geoplot, etc.
