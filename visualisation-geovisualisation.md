@@ -38,7 +38,7 @@ Below: static maps traditionally involve an intense attention to visual hierarch
 Above: A good example of a bivariate mapping [by Adriana Jacobsen](https://twitter.com/adrianaclimbs/status/1311714757083303937)
 
 ---
-![img](original_0dd817663030f7797c314bf2c9773ad6.jpg)
+![img](imgs/original_0dd817663030f7797c314bf2c9773ad6.jpg)
 Above: a poster and map series that uses *small multiples* effectively: *"Small multiple designs, multivariate and data bountiful, answer directly by visually enforcing comparisons of changes, of the differences among objects, of the scope of alternatives. For a wide range of problems in data presentation, small multiples are the best design solution."* ([Tufte 1990](https://www.edwardtufte.com/tufte/books_ei?gclid=CjwKCAiArY2fBhB9EiwAWqHK6iHEb9Ax-bn-4II14PJtgxdHppJqWYbPf2WTkNk4zcbXsYbKS19CWRoCMrcQAvD_BwE))
 
 ---
