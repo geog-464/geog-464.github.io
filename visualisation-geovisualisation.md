@@ -13,7 +13,7 @@ The goal of this overview is to help you situate yourself amid the growing const
 
 There is a wealth of visualization libraries to choose from: the task of figuring out what's worth trying out and sticking to can be [quite overwhelming](https://www.mindomo.com/mindmap/the-python-visualisation-landscape-dark-fd1a5c3770bdf84be045094f15ed3b7a).
 
-!("Pasted image 20230208021253.png")
+!(imgs/20230208021253.png)
 
 Visualisation libraries are largely based on two core technologies: Matplotlib and Javascript. When thinking about geovisualisation in particular:
 - **Matplotlib** can be understood as the **core library for static maps** facilitated by extensions such as Geopandas, Cartopy, Geoplot, etc.
@@ -32,29 +32,29 @@ Visualisation libraries are largely based on two core technologies: Matplotlib a
 
 Below: static maps traditionally involve an intense attention to visual hierarchies and detail, such as in this topographic map of Michigan.
 
-!("Pasted image 20230208135919.png")
+!(imgs/20230208135919.png)
 
-!("Pasted image 20230208141417.png")
+!(imgs/20230208141417.png)
 Above: A good example of a bivariate mapping [by Adriana Jacobsen](https://twitter.com/adrianaclimbs/status/1311714757083303937)
 
 ---
-!("original_0dd817663030f7797c314bf2c9773ad6.jpg")
+!("original_0dd817663030f7797c314bf2c9773ad6.jpg)
 Above: a poster and map series that uses *small multiples* effectively: *"Small multiple designs, multivariate and data bountiful, answer directly by visually enforcing comparisons of changes, of the differences among objects, of the scope of alternatives. For a wide range of problems in data presentation, small multiples are the best design solution."* ([Tufte 1990](https://www.edwardtufte.com/tufte/books_ei?gclid=CjwKCAiArY2fBhB9EiwAWqHK6iHEb9Ax-bn-4II14PJtgxdHppJqWYbPf2WTkNk4zcbXsYbKS19CWRoCMrcQAvD_BwE))
 
 ---
 Below: *"Ugh! The attack of the random jurisdictional unit centroid! Americans should be heartened that there are no COVID cases near their border with Ontario & QC \(link to map](https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6)\] "* -- [Tweet by Renee Sieber](https://twitter.com/re_sieber/status/1243266531724800001). A good example of sloppy design, often apparent in interactive maps!
-!("Pasted image 20230208135309.png")
+!(imgs/20230208135309.png)
 
 Below: a more general example of a terrible classification scheme by the [Montreal Gazette](https://twitter.com/andyriga/status/1349378195993337858?s=20), which can plague all maps, but especially poorly implemented interactive ones!
 
-!("Pasted image 20230208135703.png")
+!(imgs/20230208135703.png)
 
 Below is another example that appears to have a NyTimes visualisation fit for interactive interpretation but published as a static map (which was then corrected, as pointed out by [Chad Skelton](https://twitter.com/chadskelton/status/1247569232058966016))
 
-!("Pasted image 20230208140136.png")
-!("Pasted image 20230208140142.png")
+!(imgs/20230208140136.png)
+!(imgs/20230208140142.png)
 
-!("Pasted image 20230208142331.png")
+!(imgs/20230208142331.png)
 Above: [Map of commuting patterns between Italian towns](https://observablehq.com/d/787c14fa356a7c25). Must this be interactive?
 
 ## Matplotlib
@@ -81,7 +81,7 @@ When we `plot()` something in matplotlib, we usually create the following:
 - Axes: this is where the individual plots live; it contains each axis and annotations.
 - Artist: the geometric objects that are drawn on the plot.
 
-!("Pasted image 20230208012830.png")
+!(imgs/20230208012830.png)
 Source: Hubble, Edwin. “A relation between distance and radial velocity among extra-galactic nebulae.” Proceedings of the National Academy of Sciences 15.3 (1929): 168-173.
 
 ## Generic visualisation libraries built on Matplotlib
@@ -107,14 +107,14 @@ Source: Hubble, Edwin. “A relation between distance and radial velocity among 
 
 Below: A plot made with geopandas using folium, which uses leaflet to provide a tilelayer as a basemap and interactivity commonly seen in webmaps. Source: Geopandas documentation.
 
-!("Pasted image 20230208011306.png")
+!(imgs/20230208011306.png)
 
 ## [Cartopy](https://github.com/SciTools/cartopy)
 
 Especially useful for geovisualization of large areas (small scales). Uses PyProj (crs), Shapely (geoms) and Numpy, and builds off of matplotlib objects (figure, axes, etc.). 
 
 Below: a globe series made with the cartopy package, which relies on cartopy especially for visualizations like these.
-!("Pasted image 20230208011425.png")
+!(imgs/20230208011425.png)
 source: https://residentmario.github.io/geoplot/gallery/plot_los_angeles_flights.html
 
 ## [Geoplot](https://residentmario.github.io/geoplot/index.html)
@@ -156,7 +156,7 @@ For efficiently plotting extremely large datasets. This is a library for plottin
 
 Below: 300 000 000 points (1 per person) plotted using datashader
 
-!("Pasted image 20230208023713.png")
+!(imgs/20230208023713.png)
 
 ## [Geoviews](http://geoviews.org/)
 
