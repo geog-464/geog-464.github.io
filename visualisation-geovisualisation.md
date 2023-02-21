@@ -131,12 +131,15 @@ This package provides some additional functionality to the basic GeoDataFrames .
 
 # Interactive geovisualisation
 
+The packages below can work with Geopandas dataframes to generate a range of geovisualisations. However they tend to require conversion into a data interchange format like GeoJSON, or into a custom data container they can recognize. This usually requires no more than one line of code.
+
 ## [Bokeh](https://docs.bokeh.org/en/latest/)
 
 - Made by Anaconda (makers of conda package management system), relies on the grammar of graphics. High level package.
 - Strengths in interactive charts/data dashboards
 - Use python to generate web-based javascript visualizations easily embeddable elsewhere. Bokeh utilizes Javascript under the hood.
 - Bokeh is a bit like the matplotlib to interactive viz in Python: several other interactive visualisation packages are based on it!
+- It's worth looking into spatial extentions for making maps with Bokeh (see options below)
 
 ## [Plotly](https://plotly.com/python/)
 
